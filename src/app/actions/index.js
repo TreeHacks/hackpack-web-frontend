@@ -20,15 +20,12 @@ export const updateEntry = (id, text) => {
         date: new Date()
       }
     } else {
-      console.log(entries[0].id);
       entries.splice(entryIndex, 1);
-      console.log(entries[0].id);
       entries.unshift({
         id,
         text,
         date: new Date()
       });
-      console.log(entries[0].id);
     }
   }
 

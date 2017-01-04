@@ -1,5 +1,6 @@
 import React from 'react';
 import _ from 'lodash';
+import { Link } from 'react-router';
 
 const Sidebar = ({
   entries,
@@ -28,6 +29,7 @@ const Sidebar = ({
       <ul>
         {displayEntries}
       </ul>
+
     </div>
   );
 }
