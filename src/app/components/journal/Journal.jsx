@@ -12,14 +12,8 @@ const Journal = ({
 }) => {
   return (
     <div className="journal">
-      <Sidebar
-        newEntry={newEntry}
-        selectEntry={selectEntry}
-        entries={entries} />
-      <EditEntry
-        entries={entries}
-        currentEntry={currentEntry}
-        updateEntry={updateEntry} />
+      <Sidebar />
+      <EditEntry />
     </div>
   )
 }

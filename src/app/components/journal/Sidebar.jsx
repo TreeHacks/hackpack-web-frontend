@@ -3,11 +3,15 @@ import _ from 'lodash';
 import { Link } from 'react-router';
 
 const Sidebar = ({
-  entries,
-  newEntry,
-  selectEntry
+  // props go here
 }) => {
   let displayEntries = [];
+  let entries = [{
+    id: '1',
+    text: 'Hello world',
+    date: new Date()
+  }]
+
   entries.forEach(entry => {
     let text = entry.text.substr(0, 20) + '...';
     displayEntries.push((
@@ -29,7 +33,6 @@ const Sidebar = ({
       <ul>
         {displayEntries}
       </ul>
-
     </div>
   );
 }
