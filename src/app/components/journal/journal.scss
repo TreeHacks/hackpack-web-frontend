@@ -1,0 +1,51 @@
+.journal {
+  display: flex;
+  float: left;
+  width: 100%;
+  height: 100vh;
+
+  .sidebar {
+    width: 200px;
+    height: 100%;
+    float: left;
+    border-right: 1px solid black;
+
+    .new-button {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      li {
+        padding: 10px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+
+        &:hover {
+          cursor: pointer;
+          background-color: #FAFAFA;
+        }
+      }
+    }
+  }
+
+  .edit-entry {
+    flex-grow: 100;
+    height: 100vh;
+    border: 0px;
+    padding: 18px;
+    font-size: 18px;
+    line-height: 24px;
+    overflow-y: scroll;
+
+    resize: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+}
+
