@@ -26,7 +26,7 @@
     "type": "git",
     "url": "git+https://github.com/DimitriMikadze/express-react-redux-starter"
   },
-  "author": "Dimitri Mikadze",
+  "author": "Brandon Truong",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.8.0",
