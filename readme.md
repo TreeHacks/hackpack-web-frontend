@@ -2,11 +2,13 @@
 
 We are going to build a journaling/note web app that looks like this:
 
-
+![sample](https://cloud.githubusercontent.com/assets/3401801/21839837/cc082120-d78e-11e6-836e-0cad2e505736.png)
 
 To build this, we are going to use React and Redux. To store our data, we are going to use LocalStorage, which allows you to have a sort of little datastore in your browser.
 
 There are a bunch of different approaches and frameworks that we could use to create the same app, but I like React + Redux because together they give you a very clean and logical way of handling interactions, flowing data through, and creating new features for your app.
+
+This tutorial includes code that uses a lot of ES6 (and updated version of JavaScript) syntax. If you're not familiar with some syntax, [this](http://es6-features.org/) is a great source to refer to. If you're not familiar with JavaScript, [this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference) is a great reference tool and [this](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/A_first_splash) and [this](https://www.codecademy.com/) are great learning resources.
 
 To start, make sure you have git installed and clone this repository:
 
@@ -86,6 +88,8 @@ const Sidebar = ({
 
 export default Sidebar;
 ```
+
+The declaration syntax is defining a new React 'component'.
 
 Here, we hard-code the variable `entries` and then iterate through them to display a `li` item for each of them.
 
@@ -313,13 +317,13 @@ const rootReducer = combineReducers({
 export default rootReducer;
 ```
 
-This is again a lot of code. At the top, we have some logic to initialize `entries` in localStorage if it is either empty or invalid.
+This is again a lot of code. At the top, we have some logic to initialize `entries` in localStorage if it is either empty or invalid. Usually you wouldn't run into any errors, but there are some edge cases where your localStorage object may go haywire.
 
 Then, we define `initialState` which is the default state when the app opens (before any user interaction goes on).
 
 After that, we define a reducer, which takes whatever action that has been `dispatch`ed and decides how to update the state with the action's data. If you haven't seen the `Object.assign({}, state, { DATA })` syntax before, it is merging `{ DATA }` onto `state` in a new object (in other words, it returns an updated state with whatever was in `{ DATA }`). The reducer returns this updated state. The application's state is then updated to that new state.
 
-Now that the actions will actually do something, lets start adding in data and actions to the components.
+Now that the actions actually **do** things, lets start adding in data and actions to the components.
 
 Change `src/app/containers/Journal.jsx` to:
 
@@ -478,7 +482,7 @@ To solidify your understanding, here are a few additions you can add to your app
 
 Beyond that, you could add a bunch of features to this journal app, scrap the entire journal app and use your newfound knowledge to go build something completely different, hook up your app to a backend server (through your actions!) instead of using `localStorage`. The possibilities are endless.
 
-Hit me up @btroo on Slack if you ran into any issues or want to chat about where to go from here (or anything honestly)!
+Hit me up @organizer-btroo on Slack if you ran into any issues or want to chat about where to go from here!
 
 ### Credit
 Created by Brandon Truong
