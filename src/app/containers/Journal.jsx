@@ -9,22 +9,11 @@ import {
 
 const mapStateToProps = (state) => {
   return {
-    currentEntry: state.journal.currentEntry,
-    entries: state.journal.entries,
   };
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    updateEntry: ({id, text}) => {
-      dispatch(updateEntry(id, text))
-    },
-    newEntry: () => {
-      dispatch(newEntry());
-    },
-    selectEntry: (id) => {
-      dispatch(selectEntry(id));
-    }
   }
 }
 

@@ -30,20 +30,6 @@ const initialState = {
 
 const journalReducer = (state = initialState, action) => {
   switch(action.type) {
-    case actionTypes.UPDATE_ENTRY:
-      return Object.assign({}, state, {
-        entries: action.entries,
-        currentEntry: action.id
-      });
-    case actionTypes.NEW_ENTRY:
-      return Object.assign({}, state, {
-        entries: action.entries,
-        currentEntry: action.id
-      });
-    case actionTypes.SELECT_ENTRY:
-      return Object.assign({}, state, {
-        currentEntry: action.id
-      });
     default:
       return state;
   }

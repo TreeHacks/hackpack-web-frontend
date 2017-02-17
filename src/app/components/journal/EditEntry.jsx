@@ -2,13 +2,13 @@ import React from 'react';
 import _ from 'lodash';
 
 const EditEntry = ({
-  entries,
-  currentEntry,
-  updateEntry
+  // props go here
 }) => {
-  let entry = _.find(entries, (e) => {
-    return e.id === currentEntry;
-  });
+  let entry = {
+    id: '1',
+    text: 'Hello world',
+    date: new Date()
+  }
 
   return (
     <textarea
@@ -17,10 +17,7 @@ const EditEntry = ({
       name="editEntry"
       value={entry.text}
       onChange={(e) => {
-        updateEntry({
-          id: currentEntry,
-          text: document.getElementById('editEntry').value
-        });
+        // action to call on change
       }}>
     </textarea>
   )

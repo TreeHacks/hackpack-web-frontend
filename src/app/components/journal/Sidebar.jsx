@@ -3,11 +3,14 @@ import _ from 'lodash';
 import { Link } from 'react-router';
 
 const Sidebar = ({
-  entries,
-  newEntry,
-  selectEntry
+
 }) => {
   let displayEntries = [];
+  let entries = [{
+    id: '1',
+    text: 'Hello world',
+    date: new Date()
+  }];
   entries.forEach(entry => {
     let text = entry.text.substr(0, 20) + '...';
     displayEntries.push((
@@ -23,8 +26,7 @@ const Sidebar = ({
       <div
         className="button new-button"
         onClick={(e) => {
-        e.preventDefault();
-        newEntry();
+
       }}>New</div>
       <ul>
         {displayEntries}
