@@ -484,6 +484,8 @@ Beyond that, you could add a bunch of features to this journal app, scrap the en
 
 Hit me up @organizer-btroo on Slack if you ran into any issues or want to chat about where to go from here!
 
+Check out the completed code in `completed` branch.
+
 ### Credit
 Created by Brandon Truong
 
