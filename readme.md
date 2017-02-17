@@ -32,7 +32,7 @@ npm run dev
 
 This command runs a dev server (you can check what the actual command is in `package.json`) that autoreloads your app as you make changes. You don't need to worry too much about what's going on with that for this tutorial (but if you're interested, the app is using [react hot loading](https://www.youtube.com/watch?v=xsSnOQynTHs).
 
-Go to [http://localhost:3000](http://localhost:3000) and you should see something similar to the picture below.
+Go to [http://localhost:3000](http://localhost:3000) and you should see a pretty empty interface.
 
 Now that you've successfully installed and run the app, lets get coding.
 
