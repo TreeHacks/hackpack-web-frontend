@@ -28,7 +28,7 @@
     "eslint-plugin-react": "^5.1.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "html-webpack-plugin": "^2.16.1",
-    "jquery": "^2.2.3",
+    "jquery": "^3.5.0",
     "jsdom": "^9.0.0",
     "node-sass": "^3.7.0",
     "react-addons-test-utils": "^15.0.2",
